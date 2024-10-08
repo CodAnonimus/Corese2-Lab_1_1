@@ -1,0 +1,20 @@
+namespace TestForLab1
+{
+    [TestClass]
+    public class Test1
+    {
+        [TestMethod]
+        public void Testofnumber()
+        {
+            int number = 357;
+            int pervoe = 3;
+            int poslednee = 7;
+
+            int pervoe2 = number / 100;
+            int poslednee2 = number % 10;
+
+            Assert.AreEqual(pervoe, pervoe2, "Перше число не співпвдвє");
+            Assert.AreEqual(poslednee, poslednee2, "Друге число не співпадає");
+        }
+    }
+}
