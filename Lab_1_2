@@ -1,0 +1,24 @@
+using System;
+
+namespace Laboratorna1
+{
+    class Triohznacinoe
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введіть трьохзначне число: ");
+            string cislo = Console.ReadLine();
+
+            //Перевірка на введення саме трьохзначного числа.
+            if (int.TryParse(cislo, out int cislo2) && cislo2 >= 100 && cislo2 <= 999) 
+            {
+                Console.WriteLine("Перше Число: " + (cislo2 / 100));
+                Console.WriteLine("Останнє Число: " + (cislo2 % 10));
+            }
+            else
+            {
+                Console.WriteLine("Будь ласка, введіть коректне трьохзначне число!");
+            }
+        }
+    }
+}
